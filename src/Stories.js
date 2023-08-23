@@ -9,7 +9,7 @@ const Stories = () => {
       <>
         <h1>Loading.....</h1>
         <h1>
-        <img src={loading} alt="loading"/>
+        <img src={loading}  alt="loading"/>
         </h1>
       </>
     );
@@ -28,12 +28,12 @@ const Stories = () => {
                 comments
               </p>
               <div className="card-button">
-                <a href={url} target="_blank">
+                <a href={url} rel="noreferrer" target="_blank"  >
                   Read More
                 </a>
-                <a href="#" onClick={() => removePost(objectID)}>
+                <button href="#" rel="noreferrer" onClick={() => removePost(objectID)}>
                   Remove
-                </a>
+                </button>
               </div>
             </div>
           );
