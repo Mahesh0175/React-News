@@ -49,11 +49,9 @@ const reducer = (state, action) => {
                 ...state,
                 page: pageNum,
             };
-
+            default: return state;
         // you can add the default case too
     }
-
-    return state;
 };
 
 export default reducer;
